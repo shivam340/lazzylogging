@@ -18,7 +18,13 @@ public class LoggerHandler {
         return loggerHandler;
     }
 
-
+    /**
+     * This is the main method which makes use of addNum method.
+     * @param title log title.
+     * @param message log message.
+     * @return Nothing.
+     * @see java.io.IOException
+     */
     public void addLog(String title, String message) {
         LogMessage logMessage = new LogMessage("" + title, "" + message);
         logMessageArrayList.add(logMessage);
